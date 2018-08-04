@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'BentonSansBold';
-    src: url('/css/BentonSans-Bold.ttf') format('truetype'); 
+    src: url('BentonSans-Bold.ttf') format('truetype'); 
 }  
 
 @font-face {
     font-family: 'BentonSansBook';
-    src: url('/css/BentonSans-Book.ttf') format('truetype'); 
+    src: url('BentonSans-Book.ttf') format('truetype'); 
 }  
 
 html{
