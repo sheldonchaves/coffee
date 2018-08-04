@@ -1,0 +1,148 @@
+@font-face {
+    font-family: 'BentonSansBold';
+    src: url('/css/BentonSans-Bold.ttf') format('truetype'); 
+}  
+
+@font-face {
+    font-family: 'BentonSansBook';
+    src: url('/css/BentonSans-Book.ttf') format('truetype'); 
+}  
+
+html{
+    background-color: #000;
+    color: #fff;
+    font-family: "BentonSansBook";
+}
+
+.cateferia-bg{
+    position: absolute;
+    background: url(../img/bg2.jpg) no-repeat center center;
+    height: 50vh;
+    width: 100%;
+    z-index: -10;
+    background-size: cover;
+}
+
+.sap-log-bg{
+    position: absolute;
+    background: url(../img/sap.png) no-repeat;
+    bottom: 20px;
+    right: 0;
+    width: 447px;
+    height: 81px;
+    transform: scale(0.55);
+}
+
+.texts{
+    top: 70px;
+    left: 40px;
+    transform: scale(1);
+    display: inline-block;
+    position: absolute;
+}
+
+.text-title{
+    font-family: "BentonSansBold";
+    font-size: 3.4em;
+    position: absolute;
+}
+
+.text-title .line1{
+    display: block;
+    position: absolute;
+}
+
+.text-title .line2{
+    display: block;
+    position: absolute;
+    top: 55px;
+}
+
+.text-title .line3{
+    display: block;
+    position: absolute;
+    top: 110px;
+}
+
+.text-subtitle{
+    font-family: "BentonSansBold";
+    font-size: 1.25em;
+    position: absolute;
+    top: 210px;
+}
+
+.text-subtitle .line1{
+    position: absolute;
+    width: 300px;
+}
+
+.text-subtitle .line2{
+    position: absolute;
+    width: 330px;
+    top: 42px;
+    color: #e0b349;
+}
+
+.text-subtitle .line3{
+    font-family: "BentonSansBook";
+    position: absolute;
+    width: 320px;
+    top: 160px;
+}
+
+/* ********************** */
+
+#form1{
+    position: absolute;
+    top: calc(50% + 40px);
+    left: 40px;
+    width: calc(100vw - 80px);
+    height: 35vh;
+}
+
+#form1 .form-group{
+    position: absolute;
+    width: 100%;
+}
+
+#form1 .form-group input{
+    float: right;
+    width: 63vw;
+    font-size: 1.2em;
+    padding: 5px 10px;
+    border: 2px solid #ab732a;
+    background-color: #000;
+    color: rgba(255, 255, 255, .8);
+    transition: all 0.3s ease;
+}
+
+#form1 .form-group input:focus { 
+    border: 4px solid #dcb048;
+    color: #fff;
+    padding: 4px 8px;
+}
+
+#form1 .form-group label{
+    float: left;
+    font-size: 1.3em;
+}
+
+#form1 .field1{
+    /* top:  */
+}
+
+#form1 .field2{
+    top: 50px;
+}
+
+#form1 .field3{
+    top: 100px;
+}
+
+#form1 .field4{
+    top: 150px;
+}
+
+#form1 .field5{
+    top: 200px;
+}
