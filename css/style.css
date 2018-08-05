@@ -36,7 +36,7 @@ html{
 .texts{
     top: 70px;
     left: 40px;
-    transform: scale(1);
+    /* transform: scale(1); */
     display: inline-block;
     position: absolute;
 }
@@ -80,7 +80,7 @@ html{
     position: absolute;
     width: 330px;
     top: 42px;
-    color: #e0b349;
+    color: #efb70b;
 }
 
 .text-subtitle .line3{
@@ -117,7 +117,7 @@ html{
 }
 
 #form1 .form-group input:focus { 
-    border: 4px solid #dcb048;
+    border: 4px solid #efb70b;
     color: #fff;
     padding: 4px 8px;
 }
@@ -145,4 +145,283 @@ html{
 
 #form1 .field5{
     top: 200px;
+}
+
+.submit-btn{
+    position: absolute;
+    bottom: 30px;
+    width: calc(100vw - 40px);
+    text-align: center;
+}
+
+.submit-btn button{
+    background: #009ddd;
+    border: none;
+    color: #fff;
+    padding: 15px 60px;
+}
+
+.submit-btn button:disabled {
+    background: rgba(255, 255, 255, .5);
+}
+
+input.invalid{
+    border: 2px solid #f44336 !important;
+}
+
+input.valid{
+    border: 2px solid #8BC34A !important;
+}
+
+.help-text{
+    position: absolute;
+    top: 40px;
+    font-size: .85em;
+    text-align: right;
+    right: 0px;
+}
+
+#form2{
+    position: absolute;
+    top: calc(50% + 40px);
+    left: 40px;
+    width: calc(100vw - 80px);
+    height: 35vh;
+}
+
+#form2 .question{
+    color: #efb70b;
+    font-family: "BentonSansBold";
+    font-size: 1.4em;
+    position: absolute;
+}
+
+
+#form2 .answer{
+    position: absolute;
+    font-size: 1.4em;
+    font-family: "BentonSansBook";
+    cursor: pointer;
+    width: 100%;
+}
+
+#form2 .answer:before{
+    display: inline-block;
+    width: 25px;
+    background-color: #efb70b;
+    margin-right: 30px;
+    text-align: center;
+    padding: 3px 3px;
+    color: #000;
+    font-size: 1.1em;
+    font-family: "BentonSansBold";
+}
+
+#form2 .answer1 {
+    top: 55px;
+}
+#form2 .answer2 {
+    top: 110px;
+}
+#form2 .answer3 {
+    top: 165px;
+}
+#form2 .answer4 {
+    top: 225px;
+}
+
+#form2 .answer1:before{
+    content: "A";
+}
+#form2 .answer2:before{
+    content: "B";
+}
+#form2 .answer3:before{
+    content: "C";
+}
+#form2 .answer4:before{
+    content: "D";
+}
+
+#result {
+    position: absolute;
+    top: calc(34vh);
+    left: 40px;
+    width: calc(100vw - 80px);
+    height: 35vh;
+}
+
+#result .line1{
+    font-family: "BentonSansBold";
+    font-size: 2.2em;
+    display: block;
+}
+
+#result .line2{
+    font-family: "BentonSansBold";
+    font-size: 2.2em;
+    display: block;
+    color: #efb70b;
+    width: 300px;
+}
+
+#result .name{
+    font-family: "BentonSansBold";
+    position: absolute;
+    font-size: 2.5em;
+    top: 200px;
+}
+
+#result .desc{
+    font-family: "BentonSansBook";
+    font-size: 1.3em;
+    position: absolute;
+    top: 250px;
+    width: 300px;
+}
+#result .bg{
+    position: absolute;
+    background: url(../img/mestre.png) no-repeat;
+    right: -250px;
+    top: -90px;
+    width: 862px;
+    height: 972px;
+    transform: scale(0.55);
+    z-index: -999;
+}
+#result .submit-btn{
+    position: absolute;
+    bottom: -110px;
+    width: 50%;
+}
+
+@media only screen and (max-device-width: 750px){
+    .texts{
+        transform: scale(.7);
+        top: 30px;
+        left: 20px;
+    }
+    
+    .cateferia-bg{
+        height: 45vh;
+    }
+    
+    .sap-log-bg {
+        bottom: 0px;
+        transform: scale(0.4);
+        
+    }
+    .text-subtitle .line1{
+        width: 280px;
+    }
+    .text-subtitle .line2{
+        width: 280px;
+        top: 72px;
+    }
+    .text-subtitle .line3{
+        top: 210px;
+    }
+    
+    #form1{
+        left: 20px;
+        top: calc(45vh + 20px);
+    }
+    
+    #form1 .form-group {
+        width: calc(100vw - 70px);
+    }
+    
+    #form1 .form-group label{
+        font-size: .9em;
+        float: inherit;
+    }
+    
+    #form1 .form-group input {
+        float: inherit;
+        width: inherit;
+        font-size: 1em;
+        padding: 3px 10px;
+    }
+    
+    #form1 .form-group input:focus { 
+        padding: 2px 8px;
+    }
+    
+    #form1 .field2{
+        top: 50px;
+    }
+    
+    #form1 .field3{
+        top: 100px;
+    }
+    
+    #form1 .field4{
+        top: 150px;
+    }
+    
+    #form1 .field5{
+        top: 200px;
+    }
+    
+    .submit-btn{
+        bottom: -50px;
+    }
+    
+    .help-text {
+        top: 45px;
+        right: -20px;
+    }
+    
+    #form2{
+        top: calc(45vh + 20px);
+        width: calc(100vw - 40px);
+    }
+    #form2 .question{
+        text-align: center;
+        width: 80vw;
+    }
+
+    #result {
+        left: -20px;
+        top: 25vh;
+        transform: scale(.7);
+    }
+
+    
+
+    #result .bg {
+        right: -450px;
+        top: 40px;
+    }
+    
+}
+
+@media only screen 
+and (min-device-width: 768px) 
+and (max-device-width: 1366px)
+and (orientation: landscape) 
+and (-webkit-min-device-pixel-ratio: 2) {
+    
+    .texts{
+        transform: scale(.8);
+        top: 30px;
+        left: 20px;
+    }
+    
+    .text-subtitle .line1 {
+        width: 60vw;
+    }
+    .text-subtitle .line2 {
+        width: 60vw;
+    }
+    .text-subtitle .line3 {
+        width: 60vw;
+        top: 190px;
+        
+    }
+    
+    .sap-log-bg {
+        bottom: 0px;
+    }
+    
 }

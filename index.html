@@ -32,43 +32,52 @@
             </span>
         </span>
         
-        <form id="form1">
+        <form id="form1" style="opacity: 0;display: none;">
             <div class="form-group field1">
                 <label for="name">Seu nome:</label>
-                <input type="text" id="userName" name="user_name">
+                <input type="text" id="user_name" name="user_name" class="untouched">
             </div>
             <div class="form-group field2">
                 <label for="name">Sua empresa:</label>
-                <input type="text" id="userCompany" name="user_company">
+                <input type="text" id="user_company" name="user_company" class="untouched">
             </div>
             <div class="form-group field3">
                 <label for="name">Seu cargo:</label>
-                <input type="text" id="userJobtitle" name="user_jobtitle">
+                <input type="text" id="user_jobtitle" name="user_jobtitle" class="untouched">
             </div>
             <div class="form-group field4">
                 <label for="mail">Seu e-mail:</label>
-                <input type="email" id="userEmail" name="user_email">
+                <input type="email" id="user_email" name="user_email" class="untouched">
             </div>
             <div class="form-group field5">
                 <label for="mail">Seu celular:</label>
-                <input type="text" id="userMobile" name="user_mobile">
+                <input type="text" id="user_mobile" name="user_mobile" class="untouched">
+                <span class="help-text">* Você irá receber um SMS de confirmação após o preenchimento desta pesquisa.</span>
+            </div>
+            <div class="submit-btn">
+                <button type="submit" disabled>Avançar</button>
             </div>
         </form>
         
+        <form id="form2" style="opacity: 0;display: none;">
+            <span class="question"></span>
+            <span class="answer answer1"></span>
+            <span class="answer answer2"></span>
+            <span class="answer answer3"></span>
+            <span class="answer answer4"></span>
+        </form>
         
-        <div id="timelinelite"></div>
-        <div id="tagline">
-            <span>1</span>
-            <span>2</span>
-            <span>3</span>
-            <span>4</span>
-            <span>5</span>
-            <span>6</span>
-            <span>7</span>
-            <span>8</span>
-            <span>9</span>
-            <span>10</span>
-        </div>
+        <span id="result" style="opacity: 0;display: none;">
+            <span class="bg"></span>
+            <span class="line1">Parabéns!</span>
+            <span class="line2">O café que mais combina com você é o:</span>
+            <span class="name">Adriana</span>
+            <span class="desc">Notas de caramelo tostado e frutas amarelas.</span>
+
+            <span class="submit-btn">
+                <button type="button">Voltar</button>
+            </span>
+        </span>
         
         <div id="logo" class="sap-log-bg"></div>
     </div>
